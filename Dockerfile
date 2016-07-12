@@ -26,6 +26,7 @@ RUN wget -q http://apache.mirrors.spacedump.net/kafka/"$KAFKA_VERSION"/kafka_"$S
  
 #add kafka start script 
 COPY start-kafka.sh /usr/bin/start-kafka.sh
+RUN chmod +x /usr/bin/start-kafka.sh
 
 # Supervisor config
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
