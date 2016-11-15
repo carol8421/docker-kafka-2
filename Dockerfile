@@ -7,7 +7,7 @@ FROM loicmathieu/openjdk
 MAINTAINER Loic Mathieu <loicmathieu@free.fr>
 
 ENV SCALA_VERSION 2.11
-ENV KAFKA_VERSION 0.9.0.1
+ENV KAFKA_VERSION 0.10.1.0
 ENV KAFKA_HOME /opt/kafka_"$SCALA_VERSION"-"$KAFKA_VERSION"
 
 #copy cloudera CDH repo because zookeeper is in none of the default yum repos
